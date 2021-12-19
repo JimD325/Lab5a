@@ -64,10 +64,10 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   let messageTwo = `The product of ${a} and ${b} and ${c} is ${biggerMultiply}.`;
   return [biggerAdd,biggerMultiply, messageOne, messageTwo,];
 }
-let threeLog = sumAndMultiply(4,7,5);
-console.log(threeLog);
+// let threeLog = sumAndMultiply(4,7,5);
+// console.log(threeLog);
 // Here is the test for sumAndMultiply(); uncomment it to run it
-testSumAndMultiply(4,7,5);
+//testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -85,12 +85,16 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+  let qFourA = sum(sumArr[0],sumArr[1])[0];
+  let qFourB = sum(qFourA,sumArr[2])[0];
+  let message = `${sumArr} was passed in as an array of numbers, and ${qFourB} is their sum.`;
+  return [qFourB, message];
 }
-
+// sumArray([2,3,4]);
+// console.log(sumArray);
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+//testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
